@@ -1,7 +1,9 @@
 import { Module } from '@nestjs/common';
+import { PrismaService } from 'src/prisma/prisma.service';
 import { BlockchainService } from './blockchain.service';
 
 @Module({
-  providers: [BlockchainService]
+  imports: [],
+  providers: [PrismaService],
 })
-export class BlockchainModule {}
+export class BlockchainModule { }

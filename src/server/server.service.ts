@@ -1,9 +1,11 @@
-import { Global, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { BlockchainService } from 'src/blockchain/blockchain.service';
 
 @Injectable()
 export class ServerService {
-    constructor(private readonly blockchainService: BlockchainService) {
+    constructor(
+        private readonly blockchainService: BlockchainService
+        ) {
 
     }
 
